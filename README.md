@@ -47,7 +47,7 @@ The AWS Lambda function must have the following environment variables configured
 
 ## Usage
 
-1. Clone the repo: `git clone https://github.com/awslabs/amazon-lex-skype-integration.git`
+1. Clone the repo: `git clone https://github.com/aws-samples/amazon-lex-skype-integration.git`
 2. Install the necessary modules:
 ```
 cd amazon-lex-skype-integration
