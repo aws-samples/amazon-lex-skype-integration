@@ -57,8 +57,8 @@ npm install
 4. Sign into AWS Lambda [https://console.aws.amazon.com/lambda]
 5. Create a new Lambda function. Reference the IAM Role created in prerequisite step 4. Upload the zip file created in step 3.
 6. Within the Lambda function configuration, create environment variables with the following names: BOT_NAME, BOT_ALIAS, MICROSOFT_APP_ID, and MICROSOFT_APP_PASSWORD and give them the values that you noted during prerequisite steps 1 and 2.
-7. Create an AWS API Gateway API with `Lambda Proxy Integration` checked. Point it to to the AWS Lambda function that you just created in step #5:
-![Make sure to check Lambda Proxy Integration](/images/api-gateway-proxy.png?raw=true "Optional Title")
+7. Create an AWS API Gateway API with `Use Lambda Proxy Integration` checked. Point it to to the AWS Lambda function that you just created in step #5:
+![Make sure to check Use Lambda Proxy Integration](/images/api-gateway-proxy.png?raw=true "Make sure to check Lambda Proxy Integration")
  [http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html#api-gateway-create-api-as-simple-proxy-for-lambda-build].
 8. Deploy the API by choosing Actions, and then choosing Deploy API. When you deploy for the first time, you have to create a new stage. Record the Invoke URL for the stage that you deployed to.
 9. Navigate to the Microsoft BotBuilder bot and configure the messaging endpoint with the URL that you noted in the last step. This tells the BotBuilder Framework to forward any message to our API Gateway endpoint.
